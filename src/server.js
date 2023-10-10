@@ -9,7 +9,7 @@ const __dirname = path.resolve()
 const port = process.env.PORT || 3000
 
 // Uses
-app.use(express.static(path.resolve(__dirname, 'public')))
+app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
