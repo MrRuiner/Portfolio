@@ -1,7 +1,11 @@
 // Imports
 import path from 'path'
 import express from "express"
+import { engine } from 'express-handlebars'
 
+import { client } from '../src/Db/database.js'
+import queryRoutes from './routes/query.routes.js'
+import examplesRoutes from './routes/examples.js'
 
 // Constant's
 const app = express()
@@ -13,45 +17,24 @@ app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-// URL's
+// Use hbs
+app.engine('.hbs', engine({ extname: ".hbs" }))
+app.set('view engine', '.hbs')
+app.set('views', './views')
 
-app.get('/', (request, response) => {
-  response.sendFile(path.resolve(__dirname + '/index.html'))
+// Use Routes
+app.use(queryRoutes, examplesRoutes)
+
+// Database connect results
+client.connect((err) => {
+    if (err) {
+        console.log('не работает', err.stack)
+    } else {
+        console.log('работает');
+    }
 })
 
-app.get('/design-for-portfolio.vercel.app', (req, res) => {
-  res.redirect('https://design-for-portfolio.vercel.app')
-})
-
-app.get('/design-for-tg-figma.vercel.app', (req, res) => {
-  res.redirect('https://design-for-tg-figma.vercel.app')
-})
-
-app.get('/design-for-tg.vercel.app', (req, res) => {
-  res.redirect('https://design-for-tg.vercel.app')
-})
-
-app.get('/design-01-gamma.vercel.app', (req, res) => {
-  res.redirect('https://design-01-gamma.vercel.app')
-})
-
-app.get('/t.me/@SaidovAliakbar', (req, res) => {
-  res.redirect('https:///t.me/@SaidovAliakbar')
-})
-
-app.get('https://www.instagram.com/a_devv_s/', (req, res) => {
-  res.redirect('https://www.instagram.com/a_devv_s/')
-})
-
-app.get('https://github.com/MrRuiner', (req, res) => {
-  res.redirect('https://github.com/MrRuiner')
-})
-
-app.get('https://discordapp.com/users/960061651690848276/', (req, res) => {
-  res.redirect('https://discordapp.com/users/960061651690848276/')
-})
-
-
+// Listening server
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://localhost:${port}`)
 })
