@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { mainPage } from '../controllers/query.controller.js'
+import { mainPage } from '../controllers/example.controller.js'
 
 const router = Router()
   

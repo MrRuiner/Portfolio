@@ -4,7 +4,6 @@ import express from "express"
 import { engine } from 'express-handlebars'
 
 import { client } from '../src/Db/database.js'
-import queryRoutes from './routes/query.routes.js'
 import examplesRoutes from './routes/examples.js'
 
 // Constant's
@@ -23,7 +22,7 @@ app.set('view engine', '.hbs')
 app.set('views', './views')
 
 // Use Routes
-app.use(queryRoutes, examplesRoutes)
+app.use(examplesRoutes)
 
 // Database connect results
 client.connect((err) => {
