@@ -7,6 +7,10 @@
     src: url(/Fonts/KaushanScript-Regular.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -188,16 +192,15 @@ nav ul li:hover {
 
 .first_section h2 {
     font-size: 50px;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
     font-family: 'M PLUS 1p', sans-serif;
-    /* margin: 0 0 0 600px; */
+    width: 400px;
 }
 
 .about-me {
     font-size: 20px;
-    margin: 50px 0 0 50px;
+    margin: 20px 0 0 50px;
     line-height: 25px;
     letter-spacing: 1.2px;
     display: inline-block;
@@ -222,7 +225,8 @@ nav ul li:hover {
 }
 
 .tecno-card {
-    width: 100%;
+    width: 1500px;
+    padding: 20px 0 0 0;
     height: 550px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
     background: rgba(255, 255, 255, 0.1);
@@ -232,6 +236,8 @@ nav ul li:hover {
 
 .tecno-info {
     font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1.2px;
     margin: 50px 0 0 50px;
 }
 

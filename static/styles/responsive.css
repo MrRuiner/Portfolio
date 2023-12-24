@@ -1,0 +1,284 @@
+@media only screen and (max-width: 1150px) {
+
+    .main_title {
+        font-size: 60px;
+    }
+
+    header p {
+        font-size: 25px;
+    }
+
+    .header-name {
+        font-size: 25px;
+    }
+
+    .footer-hr {
+        width: 900px;
+    }
+
+    footer {
+        width: 1100px;
+        margin-left: 20px;
+    }
+
+    .container {
+        max-width: 1150px;
+    }
+
+    .examples-wrapper {
+        width: 1150px;
+        margin-left: 20px;
+    }
+
+    .second-section h2 {
+        font-size: 40px;
+    }
+
+    .second-section-info {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .first-example {
+        margin-left: 250px;
+    }
+
+    .second-example {
+        margin: -50px 0 0 550px;
+    }
+
+    .third-example {
+        margin: -50px 0 0 540px;
+    }
+
+    .fourth-example {
+        margin: -50px 0 0 530px;
+    }
+
+    .first_section h2 {
+        font-size: 40px;
+    }
+
+    .about-me {
+        font-size: 15px;
+    }
+
+    .first_section ul {
+        font-size: 15px;
+    }
+
+    .tecno-info {
+        margin: 20px 0 0 40px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1545px) {
+    .container {
+        max-width: 1545px;
+    }
+
+    .bi {
+        display: none;
+    }
+
+    .tecno-card {
+        width: 1400px;
+        margin: 0 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1465px) {
+    .container {
+        max-width: 1465px;
+    }
+
+    .footer-info {
+        width: 1000px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .tecno-card {
+        margin: 0 0 0 30px;
+        height: 450px;
+        width: 1200px;
+    }
+
+    .first_section h2 {
+        /* margin: 30px 0 0 0px; */
+        text-align: center;
+        font-size: 45px;
+        width: 1200px;
+    }
+
+    .about-me {
+        font-size: 15px;
+        width: 1200px;
+        text-align: center;
+    }
+
+    .tecno-info {
+        font-size: 15px;
+        width: 1200px;
+        text-align: center;
+        margin: 20px 0 0 45px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .container {
+        max-width: 1350px;
+    }
+
+    .tecno-card {
+        width: 1200px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .container {
+        max-width: 1250px;
+    }
+
+    .about-me {
+        width: 970px;
+    }
+
+    .first_section h2 {
+        width: 1000px;
+    }
+
+    .tecno-info {
+        width: 1000px;
+    }
+
+    .tecno-card {
+        width: 1100px;
+        margin: 0 0 0 50px;
+    }
+
+    .footer-hr {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .tecno-card {
+        width: 1000px;
+        margin: 0 0 0 30px;
+    }
+
+    .about-me {
+        width: 900px;
+    }
+
+    .first_section h2 {
+        width: 900px;
+    }
+
+    .tecno-info {
+        width: 900px;
+    }
+
+    .first_section {
+        margin: 0;
+    }
+
+
+    .first-example {
+        margin-left: 200px;
+    }
+
+    .second-example {
+        margin: -50px 0 0 400px;
+    }
+
+    .third-example {
+        margin: -50px 0 0 400px;
+    }
+
+    .fourth-example {
+        margin: -50px 0 0 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .first-example {
+        margin-left: 200px;
+    }
+
+    .second-example {
+        margin: -50px 0 0 300px;
+    }
+
+    .third-example {
+        margin: -50px 0 0 350px;
+    }
+
+    .fourth-example {
+        margin: -50px 0 0 350px;
+    }
+
+    .tecno-card {
+        width: 900px;
+    }
+
+    .about-me {
+        width: 800px;
+    }
+
+    .first_section h2 {
+        width: 800px;
+    }
+
+    .tecno-info {
+        width: 800px;
+    }
+
+    .footer-hr {
+        width: 800px;
+    }
+
+    footer .footer-info {
+        font-size: 15px;
+    }
+
+    footer h2 {
+        font-size: 40px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .menu__btn {
+        margin: 20px 0 0 100px;
+    }
+
+    nav {
+        position: fixed;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        z-index: 2;
+    }
+
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        background-color: #ffffff;
+    }
+
+    .menu__box {
+        background-color: #4a4a4a;
+    }
+}
+
+@media only screen and (max-width: 1000px) {}

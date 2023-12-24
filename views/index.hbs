@@ -18,6 +18,21 @@
         <header>
 
             <nav>
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#">About</a></li>
+                        <li><a class="menu__item" href="#">Team</a></li>
+                    </ul>
+                </div>
+
+
                 <ul>
                     <li class="about-me-li"> Обо мне </li>
                     <li class="my-projects"> Мои работы </li>
@@ -71,13 +86,13 @@
                 <h2> Обо мне: </h2>
 
                 <p class="about-me">
-                    Здравствуйте! Меня зовут <strong> Алиакбар </strong>, <br> мне <strong> 14 лет </strong> , я
+                    Здравствуйте! Меня зовут <strong> Алиакбар </strong>, мне <strong> 14 лет </strong> , я
                     начал изучение Web'а более
-                    года назад <br>
-                    и за год окончил 2 курса по базовым HTML CSS <br> и курс по back-end разработке. <br>
-                    Так-же, я в данный момент учу для себя новые технологии/ЯП <br> и развиваю свои знания в
+                    года назад
+                    и за год окончил 2 курса по базовым HTML CSS и курс по back-end разработке.
+                    Так-же, я в данный момент учу для себя новые технологии/ЯП и развиваю свои знания в
                     сфере
-                    back-end'а. <br>
+                    back-end'а.
                     Я изучал и знаю такие технологии как:
                 </p>
 
@@ -225,5 +240,7 @@
     button.addEventListener("click", handleButtonClick);
     button2.addEventListener("click", handleButtonClick2);
     button3.addEventListener("click", handleButtonClick3);
+
+    {{!-- Activate class script --}}
 
 </script>
